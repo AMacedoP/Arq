@@ -39,7 +39,7 @@ def main():
             nums[1] = hallarPen(nNums[m])
         elif m == 2:
             nums[2] = hallarHex(nNums[m])
-    endT = time()    
+    endT = time()
     print "Tiempo ejecucion: " + str((endT - startT) * 1000) + " ms"
 
 main()

@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <iostream>
 #include <algorithm>
 #include <time.h>
 using namespace std;
@@ -39,7 +38,7 @@ int main(){
    clock_t t = clock();
    while (1){
       if ((nums[0] == nums[1]) and (nums[1] == nums[2])){
-         cout << nums[0] << " " << nNums[0] << " " << nNums[1] << " " << nNums[2] << endl;
+         printf("%llu %llu %llu %llu\n", nums[0], nNums[0], nNums[1], nNums[2]);
          break;
       }
 
