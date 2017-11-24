@@ -1,4 +1,4 @@
-from time import time
+import timeit
 
 def hallarTri(n):
     return n * (n + 1) / 2
@@ -20,15 +20,14 @@ def hallarMin(nums):
         if nums[i] == m:
             return i
 
-def main():
+def hallar():
     nNums = [286, 165, 143]
     nums = [hallarTri(nNums[0]), hallarPen(nNums[1]), hallarHex(nNums[2])]
 
     finish = True
-    startT = time()
     while finish:
         if igu(nums[0], nums[1], nums[2]):
-            print nums[0], nNums[0], nums[1], nNums[1], nums[2], nNums[2]
+            # print nums[0], nNums[0], nums[1], nNums[1], nums[2], nNums[2]
             break
 
         m = hallarMin(nums)
@@ -39,7 +38,10 @@ def main():
             nums[1] = hallarPen(nNums[m])
         elif m == 2:
             nums[2] = hallarHex(nNums[m])
-    endT = time()
-    print "Tiempo ejecucion: " + str((endT - startT) * 1000) + " ms"
+
+def main():
+   times = 100
+   t = timeit.timeit('hallar()', setup = "from __main__ import hallar", number = times)
+   print "Se demoro " + str((t / times) * 1000) + " ms"
 
 main()
