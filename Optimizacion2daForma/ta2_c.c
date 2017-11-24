@@ -7,12 +7,12 @@
         "libraries": [
             "m"
         ], 
-        "name": "ta1_c", 
+        "name": "ta2_c", 
         "sources": [
-            "ta1_c.pyx"
+            "ta2_c.pyx"
         ]
     }, 
-    "module_name": "ta1_c"
+    "module_name": "ta2_c"
 }
 END: Cython Metadata */
 
@@ -534,8 +534,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__ta1_c
-#define __PYX_HAVE_API__ta1_c
+#define __PYX_HAVE__ta2_c
+#define __PYX_HAVE_API__ta2_c
 #include <math.h>
 #ifdef _OPENMP
 #include <omp.h>
@@ -740,7 +740,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "ta1_c.pyx",
+  "ta2_c.pyx",
 };
 
 /*--- Type declarations ---*/
@@ -957,20 +957,20 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* Module declarations from 'libc.math' */
 
-/* Module declarations from 'ta1_c' */
-#define __Pyx_MODULE_NAME "ta1_c"
-extern int __pyx_module_is_main_ta1_c;
-int __pyx_module_is_main_ta1_c = 0;
+/* Module declarations from 'ta2_c' */
+#define __Pyx_MODULE_NAME "ta2_c"
+extern int __pyx_module_is_main_ta2_c;
+int __pyx_module_is_main_ta2_c = 0;
 
-/* Implementation of 'ta1_c' */
+/* Implementation of 'ta2_c' */
 static const char __pyx_k_n[] = "n";
 static const char __pyx_k_aux[] = "aux";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_esPen[] = "esPen";
-static const char __pyx_k_ta1_c[] = "ta1_c";
+static const char __pyx_k_ta2_c[] = "ta2_c";
 static const char __pyx_k_hallarHex[] = "hallarHex";
-static const char __pyx_k_ta1_c_pyx[] = "ta1_c.pyx";
+static const char __pyx_k_ta2_c_pyx[] = "ta2_c.pyx";
 static const char __pyx_k_is_integer[] = "is_integer";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static PyObject *__pyx_n_s_aux;
@@ -980,17 +980,17 @@ static PyObject *__pyx_n_s_hallarHex;
 static PyObject *__pyx_n_s_is_integer;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_n;
-static PyObject *__pyx_n_s_ta1_c;
-static PyObject *__pyx_kp_s_ta1_c_pyx;
+static PyObject *__pyx_n_s_ta2_c;
+static PyObject *__pyx_kp_s_ta2_c_pyx;
 static PyObject *__pyx_n_s_test;
-static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_aux); /* proto */
-static PyObject *__pyx_pf_5ta1_c_2hallarHex(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_n); /* proto */
+static PyObject *__pyx_pf_5ta2_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_aux); /* proto */
+static PyObject *__pyx_pf_5ta2_c_2hallarHex(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_n); /* proto */
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__3;
 static PyObject *__pyx_codeobj__2;
 static PyObject *__pyx_codeobj__4;
 
-/* "ta1_c.pyx":3
+/* "ta2_c.pyx":3
  * from libc.math cimport sqrt
  * 
  * def esPen(long int aux):             # <<<<<<<<<<<<<<
@@ -999,9 +999,9 @@ static PyObject *__pyx_codeobj__4;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5ta1_c_1esPen(PyObject *__pyx_self, PyObject *__pyx_arg_aux); /*proto*/
-static PyMethodDef __pyx_mdef_5ta1_c_1esPen = {"esPen", (PyCFunction)__pyx_pw_5ta1_c_1esPen, METH_O, 0};
-static PyObject *__pyx_pw_5ta1_c_1esPen(PyObject *__pyx_self, PyObject *__pyx_arg_aux) {
+static PyObject *__pyx_pw_5ta2_c_1esPen(PyObject *__pyx_self, PyObject *__pyx_arg_aux); /*proto*/
+static PyMethodDef __pyx_mdef_5ta2_c_1esPen = {"esPen", (PyCFunction)__pyx_pw_5ta2_c_1esPen, METH_O, 0};
+static PyObject *__pyx_pw_5ta2_c_1esPen(PyObject *__pyx_self, PyObject *__pyx_arg_aux) {
   long __pyx_v_aux;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
@@ -1011,18 +1011,18 @@ static PyObject *__pyx_pw_5ta1_c_1esPen(PyObject *__pyx_self, PyObject *__pyx_ar
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("ta1_c.esPen", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("ta2_c.esPen", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5ta1_c_esPen(__pyx_self, ((long)__pyx_v_aux));
+  __pyx_r = __pyx_pf_5ta2_c_esPen(__pyx_self, ((long)__pyx_v_aux));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_aux) {
+static PyObject *__pyx_pf_5ta2_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_aux) {
   double __pyx_v_n;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -1032,7 +1032,7 @@ static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long 
   int __pyx_t_4;
   __Pyx_RefNannySetupContext("esPen", 0);
 
-  /* "ta1_c.pyx":4
+  /* "ta2_c.pyx":4
  * 
  * def esPen(long int aux):
  *    cdef double n = (sqrt(24 * aux + 1) + 1) / 6             # <<<<<<<<<<<<<<
@@ -1041,7 +1041,7 @@ static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long 
  */
   __pyx_v_n = ((sqrt(((24 * __pyx_v_aux) + 1)) + 1.0) / 6.0);
 
-  /* "ta1_c.pyx":5
+  /* "ta2_c.pyx":5
  * def esPen(long int aux):
  *    cdef double n = (sqrt(24 * aux + 1) + 1) / 6
  *    if (n).is_integer():             # <<<<<<<<<<<<<<
@@ -1075,7 +1075,7 @@ static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_4) {
 
-    /* "ta1_c.pyx":6
+    /* "ta2_c.pyx":6
  *    cdef double n = (sqrt(24 * aux + 1) + 1) / 6
  *    if (n).is_integer():
  *       return True             # <<<<<<<<<<<<<<
@@ -1087,7 +1087,7 @@ static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long 
     __pyx_r = Py_True;
     goto __pyx_L0;
 
-    /* "ta1_c.pyx":5
+    /* "ta2_c.pyx":5
  * def esPen(long int aux):
  *    cdef double n = (sqrt(24 * aux + 1) + 1) / 6
  *    if (n).is_integer():             # <<<<<<<<<<<<<<
@@ -1096,7 +1096,7 @@ static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long 
  */
   }
 
-  /* "ta1_c.pyx":7
+  /* "ta2_c.pyx":7
  *    if (n).is_integer():
  *       return True
  *    return False             # <<<<<<<<<<<<<<
@@ -1108,7 +1108,7 @@ static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long 
   __pyx_r = Py_False;
   goto __pyx_L0;
 
-  /* "ta1_c.pyx":3
+  /* "ta2_c.pyx":3
  * from libc.math cimport sqrt
  * 
  * def esPen(long int aux):             # <<<<<<<<<<<<<<
@@ -1121,7 +1121,7 @@ static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long 
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("ta1_c.esPen", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("ta2_c.esPen", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1129,7 +1129,7 @@ static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long 
   return __pyx_r;
 }
 
-/* "ta1_c.pyx":9
+/* "ta2_c.pyx":9
  *    return False
  * 
  * def hallarHex(long int n):             # <<<<<<<<<<<<<<
@@ -1137,9 +1137,9 @@ static PyObject *__pyx_pf_5ta1_c_esPen(CYTHON_UNUSED PyObject *__pyx_self, long 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5ta1_c_3hallarHex(PyObject *__pyx_self, PyObject *__pyx_arg_n); /*proto*/
-static PyMethodDef __pyx_mdef_5ta1_c_3hallarHex = {"hallarHex", (PyCFunction)__pyx_pw_5ta1_c_3hallarHex, METH_O, 0};
-static PyObject *__pyx_pw_5ta1_c_3hallarHex(PyObject *__pyx_self, PyObject *__pyx_arg_n) {
+static PyObject *__pyx_pw_5ta2_c_3hallarHex(PyObject *__pyx_self, PyObject *__pyx_arg_n); /*proto*/
+static PyMethodDef __pyx_mdef_5ta2_c_3hallarHex = {"hallarHex", (PyCFunction)__pyx_pw_5ta2_c_3hallarHex, METH_O, 0};
+static PyObject *__pyx_pw_5ta2_c_3hallarHex(PyObject *__pyx_self, PyObject *__pyx_arg_n) {
   long __pyx_v_n;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
@@ -1149,24 +1149,24 @@ static PyObject *__pyx_pw_5ta1_c_3hallarHex(PyObject *__pyx_self, PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("ta1_c.hallarHex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("ta2_c.hallarHex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5ta1_c_2hallarHex(__pyx_self, ((long)__pyx_v_n));
+  __pyx_r = __pyx_pf_5ta2_c_2hallarHex(__pyx_self, ((long)__pyx_v_n));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5ta1_c_2hallarHex(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_n) {
+static PyObject *__pyx_pf_5ta2_c_2hallarHex(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_n) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("hallarHex", 0);
 
-  /* "ta1_c.pyx":10
+  /* "ta2_c.pyx":10
  * 
  * def hallarHex(long int n):
  *    return n * (2 * n -1)             # <<<<<<<<<<<<<<
@@ -1178,7 +1178,7 @@ static PyObject *__pyx_pf_5ta1_c_2hallarHex(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "ta1_c.pyx":9
+  /* "ta2_c.pyx":9
  *    return False
  * 
  * def hallarHex(long int n):             # <<<<<<<<<<<<<<
@@ -1188,7 +1188,7 @@ static PyObject *__pyx_pf_5ta1_c_2hallarHex(CYTHON_UNUSED PyObject *__pyx_self, 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("ta1_c.hallarHex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("ta2_c.hallarHex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1203,17 +1203,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_ta1_c(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_ta2_c(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_ta1_c},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_ta2_c},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "ta1_c",
+    "ta2_c",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -1240,8 +1240,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_is_integer, __pyx_k_is_integer, sizeof(__pyx_k_is_integer), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
   {&__pyx_n_s_n, __pyx_k_n, sizeof(__pyx_k_n), 0, 0, 1, 1},
-  {&__pyx_n_s_ta1_c, __pyx_k_ta1_c, sizeof(__pyx_k_ta1_c), 0, 0, 1, 1},
-  {&__pyx_kp_s_ta1_c_pyx, __pyx_k_ta1_c_pyx, sizeof(__pyx_k_ta1_c_pyx), 0, 0, 1, 0},
+  {&__pyx_n_s_ta2_c, __pyx_k_ta2_c, sizeof(__pyx_k_ta2_c), 0, 0, 1, 1},
+  {&__pyx_kp_s_ta2_c_pyx, __pyx_k_ta2_c_pyx, sizeof(__pyx_k_ta2_c_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {0, 0, 0, 0, 0, 0, 0}
 };
@@ -1253,7 +1253,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "ta1_c.pyx":3
+  /* "ta2_c.pyx":3
  * from libc.math cimport sqrt
  * 
  * def esPen(long int aux):             # <<<<<<<<<<<<<<
@@ -1263,9 +1263,9 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple_ = PyTuple_Pack(3, __pyx_n_s_aux, __pyx_n_s_aux, __pyx_n_s_n); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ta1_c_pyx, __pyx_n_s_esPen, 3, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ta2_c_pyx, __pyx_n_s_esPen, 3, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 3, __pyx_L1_error)
 
-  /* "ta1_c.pyx":9
+  /* "ta2_c.pyx":9
  *    return False
  * 
  * def hallarHex(long int n):             # <<<<<<<<<<<<<<
@@ -1274,7 +1274,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__3 = PyTuple_Pack(2, __pyx_n_s_n, __pyx_n_s_n); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ta1_c_pyx, __pyx_n_s_hallarHex, 9, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_ta2_c_pyx, __pyx_n_s_hallarHex, 9, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -1290,11 +1290,11 @@ static int __Pyx_InitGlobals(void) {
 }
 
 #if PY_MAJOR_VERSION < 3
-PyMODINIT_FUNC initta1_c(void); /*proto*/
-PyMODINIT_FUNC initta1_c(void)
+PyMODINIT_FUNC initta2_c(void); /*proto*/
+PyMODINIT_FUNC initta2_c(void)
 #else
-PyMODINIT_FUNC PyInit_ta1_c(void); /*proto*/
-PyMODINIT_FUNC PyInit_ta1_c(void)
+PyMODINIT_FUNC PyInit_ta2_c(void); /*proto*/
+PyMODINIT_FUNC PyInit_ta2_c(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -1334,7 +1334,7 @@ bad:
 }
 
 
-static int __pyx_pymod_exec_ta1_c(PyObject *__pyx_pyinit_module)
+static int __pyx_pymod_exec_ta2_c(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -1352,7 +1352,7 @@ static int __pyx_pymod_exec_ta1_c(PyObject *__pyx_pyinit_module)
           Py_FatalError("failed to import 'refnanny' module");
   }
   #endif
-  __Pyx_RefNannySetupContext("PyMODINIT_FUNC PyInit_ta1_c(void)", 0);
+  __Pyx_RefNannySetupContext("PyMODINIT_FUNC PyInit_ta2_c(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_tuple = PyTuple_New(0); if (unlikely(!__pyx_empty_tuple)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_bytes = PyBytes_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_bytes)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -1388,7 +1388,7 @@ static int __pyx_pymod_exec_ta1_c(PyObject *__pyx_pyinit_module)
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("ta1_c", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("ta2_c", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -1407,14 +1407,14 @@ static int __pyx_pymod_exec_ta1_c(PyObject *__pyx_pyinit_module)
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_ta1_c) {
+  if (__pyx_module_is_main_ta2_c) {
     if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "ta1_c")) {
-      if (unlikely(PyDict_SetItemString(modules, "ta1_c", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "ta2_c")) {
+      if (unlikely(PyDict_SetItemString(modules, "ta2_c", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -1434,30 +1434,30 @@ static int __pyx_pymod_exec_ta1_c(PyObject *__pyx_pyinit_module)
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "ta1_c.pyx":3
+  /* "ta2_c.pyx":3
  * from libc.math cimport sqrt
  * 
  * def esPen(long int aux):             # <<<<<<<<<<<<<<
  *    cdef double n = (sqrt(24 * aux + 1) + 1) / 6
  *    if (n).is_integer():
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5ta1_c_1esPen, NULL, __pyx_n_s_ta1_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5ta2_c_1esPen, NULL, __pyx_n_s_ta2_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_esPen, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ta1_c.pyx":9
+  /* "ta2_c.pyx":9
  *    return False
  * 
  * def hallarHex(long int n):             # <<<<<<<<<<<<<<
  *    return n * (2 * n -1)
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5ta1_c_3hallarHex, NULL, __pyx_n_s_ta1_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5ta2_c_3hallarHex, NULL, __pyx_n_s_ta2_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_hallarHex, __pyx_t_1) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ta1_c.pyx":1
+  /* "ta2_c.pyx":1
  * from libc.math cimport sqrt             # <<<<<<<<<<<<<<
  * 
  * def esPen(long int aux):
@@ -1474,11 +1474,11 @@ static int __pyx_pymod_exec_ta1_c(PyObject *__pyx_pyinit_module)
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init ta1_c", 0, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init ta2_c", 0, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init ta1_c");
+    PyErr_SetString(PyExc_ImportError, "init ta2_c");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

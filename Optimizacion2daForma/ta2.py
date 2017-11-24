@@ -1,4 +1,4 @@
-from ta1_c import esPen, hallarHex
+from ta2_c import esPen, hallarHex
 import timeit
 
 def hallar():
