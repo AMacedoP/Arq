@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, twoclumn]{article}
 % Paquetes a usar
 \usepackage{graphicx}
 \usepackage{subcaption}
@@ -56,16 +56,9 @@ se consigue avanzando al término siguiente del menor de los 3.
 \end{table}
 
 Como se sabe que estos 3 números en algún momento serán iguales, este algoritmo terminará cuando se cumpla esta condición.
-Una porción del código será presentado a continucación ({\textit el código completo se encuentra en la carpeta PrimeraForma}).
-
-\begin{figure}[H]
-   \centering
-   \includegraphics[width=\columnwidth]{img/primerCod}
-   \caption{Porción de código que ejecuta el algoritmo antes mostrado}
-\end{figure}
-
 Adicionalmete se ha desarrollado el mismo algoritmo pero en C++ con el motivo de servir de comparación entre estos dos
-lenguajes. Los resultados de ambos códigos se presentan a continuación:
+lenguajes (\textit{ambos códigos se encuentran en la carpeta PrimeraForma}. Los resultados de ambos códigos se presentan
+a continuación:
 
 \begin{table}[H]
    \centering
@@ -103,5 +96,18 @@ Esto facilita mucho el cálculo del número pedido ya que solo se necesitaría s
    n = \frac{\sqrt{24x + 1} + 1}{6}
 \end{equation}
 
+Esto reduce considerablemente la complejidad de algoritmo ya que no se necesita hacer una verificación, además de que se avanza considerablemente más rápido que el algoritmo anterior
+ya que la tasa de crecimiento de los números hexagonales es mucho mayor que de los otros dos. De la misma forma que el algoritmo anterior, se implementó este algoritmo en C++ a
+manera de comparar ambos lenguajes en cuando a tiempo de ejecución.
+
+\begin{table}[H]
+   \centering
+   \caption{Tiempos de ejecución para ambos lenguajes}
+   \begin{tabular}{ccc}
+      & Python & C++\\
+      \hline
+      Tiempo & 130ms - 140ms & 3ms - 6ms\\
+   \end{tabular}
+\end{table}
 
 \end{document}
