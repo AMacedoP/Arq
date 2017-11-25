@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+% Paquetes a usar
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{threeparttable}
+\usepackage[useregional]{datetime2}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{titlepage}
+   \centering
+   {\scshape\LARGE Pontifica Universidad Católica del Perú \par}
+   \includegraphics[width=0.8\textwidth]{img/logo}\par
+   \vspace{1cm}
+   {\scshape\Large Trabajo Académico del curso Arquitectura de Computadoras\par}
+   \vspace{1.5cm}
+   {\huge\bfseries Tiempo de ejecución y optimización \par}
+   \vspace{2cm}
+   {\Huge Alumno \par}
+   \vspace{0.5cm}
+   {\Large\itshape Alejandro Macedo Pereira \par}
+   \vspace{2cm}
+   {\Huge Profesor \par}
+   \vspace{0.5cm}
+   {\Large\itshape Jorge Benavides Aspiazu \par}
+   \vfill
+   \DTMsavedate{creacion}{2017-11-24}
+   {\Large \DTMusedate{creacion} \par}
+\end{titlepage}
+
+\section{Introducción}
+
+\section{Primer algoritmo}
+El primer algoritmo usado para resolver el problema fue tratar de mantener la mínima distancia entre los 3 números, lo cual
+se consigue avanzando al término siguiente del menor de los 3.
+
+\begin{table}[H]
+   \centering
+   \begin{tabular}{ccc}
+      Triangulares & Pentagonales & Hexagonales\\
+      \hline
+      {\textbf 3} & 5 & 6\\
+      {\textbf 6} & 5 & 6\\
+      10 & {\textbf 5} & 6\\
+      10 & 12 & {\textbf 6}\\
+      & {\textbf .} &\\
+      & {\textbf .} &\\
+      & {\textbf .} &\\
+   \end{tabular}
+   \caption{Primer algoritmo seleccionando el menor de los 3}
+\end{table}
+
+Como se sabe que estos 3 números en algún momento serán iguales, este algoritmo terminará cuando se cumpla esta condición.
+Una porción del código será presentado a continucación ({\textit el código completo se encuentra en la carpeta PrimeraForma}).
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=\columnwidth]{img/primerCod}
+   \caption{Porción de código que ejecuta el algoritmo antes mostrado}
+\end{figure}
+
+Adicionalmete se ha desarrollado el mismo algoritmo pero en C++ con el motivo de servir de comparación entre estos dos
+lenguajes. Los resultados de ambos códigos se presentan a continuación:
+
+\begin{table}[H]
+   \centering
+   \caption{Tiempos de ejecución para ambos lenguajes}
+   \begin{tabular}{ccc}
+      & Python & C++\\
+      \hline
+      Tiempo & 130ms - 140ms & 3ms - 6ms\\
+   \end{tabular}
+\end{table}
+
+Como se observa, el tiempo que demora Python en ejecutar el código no es muy alto, lo que nos indica que el algoritmo usado
+es eficiente ya que este tiempo está en el orden de los milisegundos; sin embargo no se compara a C++ ya que toma aproximadamente $ \frac{1}{10} $ del tiempo.
+
+\section{Segundo algoritmo}
+Luego de investigar en Internet, ví que este problema había sido planteado en la página de Project Euler, en la cual se
+presentan desafíos de matemática y programación \cite{peuler}, siendo este el problema número 45. De la misma forma también
+encontré una solución a este desafío hecha por Kristian Edlund en su página Mathblog \cite{kris} donde presenta una solución
+aprovechando la propiedad de que el conjunto de los números hexagonales es un subconjunto de los números triangulares, lo cual
+se prueba a continuación.
+
+\begin{equation}
+   \begin{gathered}
+      T(n) = n * (n + 1) / 2\\
+      reemplazando ~n = 2m - 1\\
+      T(2m - 1) = (2m - 1) * ((2m - 1) + 1) / 2\\
+      T(2m - 1) = (2m - 1) * 2m / 2\\
+      T(2m - 1) = m * (2m - 1) = H(m)
+   \end{gathered}
+\end{equation}
+
+Esto facilita mucho el cálculo del número pedido ya que solo se necesitaría saber si un número hexagonal es al mismo tiempo pentagonal. Esto se consigue con la inversa de la fórmula de los números pentagonales; si $ n $ es un número entero, entonces también es pentagonal.
+
+\begin{equation}
+   n = \frac{\sqrt{24x + 1} + 1}{6}
+\end{equation}
+
+
+\end{document}

@@ -27,7 +27,6 @@ def hallar():
     finish = True
     while finish:
         if igu(nums[0], nums[1], nums[2]):
-            # print nums[0], nNums[0], nums[1], nNums[1], nums[2], nNums[2]
             break
 
         m = hallarMin(nums)
