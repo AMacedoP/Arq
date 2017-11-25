@@ -1,6 +1,8 @@
 from ta2_c import esPen, hallarHex
 import timeit
 
+# Similar al segundo algoritmo, solo que usa funciones
+# compiladas con ayuda de Cython
 def hallar():
    n = 143
    aux = 0

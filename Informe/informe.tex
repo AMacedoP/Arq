@@ -1,4 +1,4 @@
-\documentclass[12pt, twoclumn]{article}
+\documentclass[12pt]{article}
 % Paquetes a usar
 \usepackage{graphicx}
 \usepackage{subcaption}
@@ -34,6 +34,12 @@
 \end{titlepage}
 
 \section{Introducción}
+Python es un lenguaje de programación de alto nivel muy valorado y usado en la actualidad por la sencillez de su sintaxis y lo poderosa y flexible que puede ser para la creación
+de programas en cualquier ámbito de la humanidad. No obstante, al ser un lenguaje interpretado no llega a ser tan rápido que un programa implementado con un lenguaje compilado
+como C o C++. Sin embargo, el factor que más afecta al tiempo de ejecución es la lógica y el algoritmo usado para resolver el problema ya que sin una implementación y uso de los
+recursos eficiente, el programa será lento sin importar el lenguaje utilizado. Por esta razón se presentan dos algoritmos usados para la resolución de un problema propuesto, donde
+se explicara la lógica seguida en cada caso y su correspondiente tiempo de ejecución en Python y C++ para realizar la comparación entre ambos lenguajes. Adicionalmente se
+realizará un proceso de optimización al código escrito en Python usando el módulo para observar la mejora que proporciona.
 
 \section{Primer algoritmo}
 El primer algoritmo usado para resolver el problema fue tratar de mantener la mínima distancia entre los 3 números, lo cual
@@ -62,11 +68,11 @@ a continuación:
 
 \begin{table}[H]
    \centering
-   \caption{Tiempos de ejecución para ambos lenguajes}
+   \caption{Tiempos de ejecución para ambos lenguajes\protect\footnotemark}
    \begin{tabular}{ccc}
       & Python & C++\\
       \hline
-      Tiempo & 130ms - 140ms & 3ms - 6ms\\
+      Tiempo & 90ms - 100ms & 1ms - 3ms\\
    \end{tabular}
 \end{table}
 
@@ -102,12 +108,53 @@ manera de comparar ambos lenguajes en cuando a tiempo de ejecución.
 
 \begin{table}[H]
    \centering
-   \caption{Tiempos de ejecución para ambos lenguajes}
+   \caption{Tiempos de ejecución para ambos lenguajes\protect\footnotemark[\value{footnote}]}
    \begin{tabular}{ccc}
       & Python & C++\\
       \hline
-      Tiempo & 130ms - 140ms & 3ms - 6ms\\
+      Tiempo & 10ms - 15ms & 0.6ms - 0.8ms\\
    \end{tabular}
 \end{table}
 
+
+Se observa que el tiempo ha disminuído mucho en comparación al algoritmo anterior, casi alcanzando el tiempo que demoraba C++ con el algoritmo anterior, claro que con este algoritmo
+el código en C++ se ejecuta aproximadamente $ \frac{1}{10} $ del tiempo que toma Python.
+
+\section{Optimización al segundo algoritmo}
+Al ser Python un lenguaje interpretado el tiempo que tarda el programa en ejecutarse es mayor ya que cada línea tiene que ser enviada al intérprete y luego convertida a código maquina
+para su posterior ejecución. Por lo tanto, si fuera posible compilar parte de las funciones usadas en el programa, el tiempo de ejecución mejoraría ya que son muchas menos líneas
+que tienen que enviarse para su interpretación y ejecución. Para este fin es que se usa el módulo Cython, el cual permite compilar y luego importar estas porciones de código para
+que sean llamadas en otros programas. Este módulo fue usado para compilar las dos funciones matemáticas auxiliares en el segundo algoritmo y los resultados de esta aceleración
+serán presentadas a continuación (\textit{el código utilizado se encuentra en la carpeta OptimizacionSegundaForma}).
+
+\begin{table}[H]
+   \centering
+   \caption{Tiempos de ejecución sin y con optimización \protect\footnotemark[\value{footnote}]}
+   \begin{tabular}{ccc}
+      & Python sin optimización & Python con optimización\\
+      \hline
+      Tiempo & 10ms - 15ms & 2ms - 3ms\\
+   \end{tabular}
+\end{table}
+
+\section{Conclusiones}
+Con los resultados obtenidos se observa la importancia de el desarrollo de algoritmos eficientes para mejorar los tiempos de ejecución de los programas escritos. Esto se vuelve
+aún más importante en los problemas donde la cantidad de datos se vuelve mucho más grande, como aplicaciones de Big Data, porque sino podrían tardar años en ejecutarse si no
+se implementa eficientemente. También se observa la ayuda que pueden bridar módulos como Cython para agilizar la ejecución de programas escritos en lenguajes interpretados como
+Python, aumentado su flexibilidad y ámbitos donde pueda ser usado. Finalmente, aunque hubiera querido medir el consumo de memoria de los programas escritos en Python, los módulos
+para este fin no funcionaban correctamente ya que entregaban información sin sentido por lo que no se pudo hacer el respectivo análisis.
+
+\footnotetext{Ambos programas ejecutados en una computadora con procesador i7-4710HQ y 16 GB de RAM}
+
+\begin{thebibliography}{9}
+   \bibitem{kris}
+      EDLUND, Kristian\\
+      2011, \textit{Project Euler 45: After 40755, what is the next triangle number that is also pentagonal and hexagonal?}. Consulta: 22 de noviembre del 2017.\\
+      http://www.mathblog.dk/project-euler-45-next-triangle-pentagonal-hexagonal-number/
+
+   \bibitem{peuler}
+      PROJECT EULER\\
+      Project Euler. Consulta: 23 de noviembre del 2017.\\
+      https://projecteuler.net/
+\end{thebibliography}
 \end{document}

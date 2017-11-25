@@ -24,7 +24,7 @@ def hallar():
     nNums = [286, 165, 143]
     nums = [hallarTri(nNums[0]), hallarPen(nNums[1]), hallarHex(nNums[2])]
 
-    finish = True
+    # Avanza la secuencia si es que es el mínimo
     while finish:
         if igu(nums[0], nums[1], nums[2]):
             break

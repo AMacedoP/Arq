@@ -13,6 +13,8 @@ def hallarHex(n):
 def hallar():
    n = 143
    aux = 0
+   # Avanza la secuencia de los números hexagonales
+   # y comprueba si dicho número tambien es pentagonal
    while True:
       n = n + 1;
       aux = hallarHex(n)
